@@ -1,0 +1,71 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'veri_seti_01.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(761, 537)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label_dosya_adi = QtWidgets.QLabel(self.centralwidget)
+        self.label_dosya_adi.setGeometry(QtCore.QRect(40, 100, 141, 41))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_dosya_adi.sizePolicy().hasHeightForWidth())
+        self.label_dosya_adi.setSizePolicy(sizePolicy)
+        self.label_dosya_adi.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.label_dosya_adi.setFrameShape(QtWidgets.QFrame.Box)
+        self.label_dosya_adi.setObjectName("label_dosya_adi")
+        self.label_save_path = QtWidgets.QLabel(self.centralwidget)
+        self.label_save_path.setGeometry(QtCore.QRect(40, 160, 141, 41))
+        self.label_save_path.setLayoutDirection(QtCore.Qt.RightToLeft)
+        self.label_save_path.setAutoFillBackground(False)
+        self.label_save_path.setStyleSheet("background-color: rgb(255, 255, 255)")
+        self.label_save_path.setFrameShape(QtWidgets.QFrame.Box)
+        self.label_save_path.setObjectName("label_save_path")
+        self.baslat_button = QtWidgets.QPushButton(self.centralwidget)
+        self.baslat_button.setGeometry(QtCore.QRect(130, 260, 221, 81))
+        self.baslat_button.setObjectName("baslat_button")
+        self.editbox_dosya_klasor = QtWidgets.QTextEdit(self.centralwidget)
+        self.editbox_dosya_klasor.setGeometry(QtCore.QRect(210, 100, 411, 41))
+        self.editbox_dosya_klasor.setObjectName("editbox_dosya_klasor")
+        self.edit_box_save_path = QtWidgets.QTextEdit(self.centralwidget)
+        self.edit_box_save_path.setGeometry(QtCore.QRect(210, 160, 411, 41))
+        self.edit_box_save_path.setObjectName("edit_box_save_path")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 761, 26))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Veri Seti Olustur"))
+        self.label_dosya_adi.setText(_translate("MainWindow", "Dosya Adı :"))
+        self.label_save_path.setText(_translate("MainWindow", "Kaydedilecek Klasör :"))
+        self.baslat_button.setText(_translate("MainWindow", "Veri Seti Olustur"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+
